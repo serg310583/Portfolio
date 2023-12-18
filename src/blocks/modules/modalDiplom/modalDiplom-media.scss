@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+  .popup__dp {
+    .popup_dp {
+      width: 80vw;
+      height: auto;
+      .content_dp {
+        .diplom_img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .popup__dp {
+    .popup_dp {
+      width: 100vw;
+      height: auto;
+      .content_dp {
+        .diplom_img {
+          width: 100%;
+          height: auto;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .popup__dp {
+    .popup_dp {
+      width: 100vw;
+      height: auto;
+      .content_dp {
+        .diplom_img {
+          width: 100%;
+          height: auto;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}

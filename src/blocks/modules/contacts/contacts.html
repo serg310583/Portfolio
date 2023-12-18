@@ -1,0 +1,153 @@
+<section
+  aria-labelledby="contacts-heading"
+  id="contacts"
+  class="container contacts"
+>
+  <div class="wrapper">
+    <div class="contacts__photo">
+      <img
+        class="contacts__photo_img"
+        src="./img/img/main_photo.webp"
+        alt="photo"
+      />
+    </div>
+    <div class="contacts__wrapper">
+      <h2
+        id="contacts-heading"
+        class="contacts__wrapper_contacts_title title_fz16"
+      >
+        Контакты
+      </h2>
+      <div class="contacts__wrapper_contacts_subtitle title_fz36">
+        Свяжитесь со мной
+      </div>
+      <div class="contacts__wrapper_contacts_subtitle-sub title_fz14">
+        Любым удобным для вас способом:
+      </div>
+      <div class="contacts__wrapper_menu-socials">
+        <a
+          title="github"
+          href="https://github.com/serg310583"
+          class="promo__socials_link"
+          target="_blank"
+          tabindex="40"
+          role="button"
+        >
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#github"></use>
+          </svg>
+        </a>
+        <a
+          title="Вконтакте"
+          href="https://vk.com/sergey.tselovalnikov"
+          class="promo__socials_link"
+          target="_blank"
+          tabindex="41"
+          role="button"
+        >
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a
+          title="telegram"
+          href="https://t.me/Sergey310583"
+          class="promo__socials_link"
+          target="_blank"
+          tabindex="42"
+          role="button"
+        >
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="contacts__wrapper_contacts_subtitle-sub title_fz14">
+        Или оставьте ваши данные и я сам вам напишу:
+      </div>
+      <form
+        class="contacts__wrapper_contacts_form"
+        id="form"
+        action="#"
+        name="form"
+      >
+        <div class="contacts__wrapper_contacts_form_wrap">
+          <div class="contacts__wrapper_contacts_form_wrap-name">
+            <input
+              class="_req _name"
+              tabindex="43"
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Ваше имя*"
+              data-reg="^[А-ЯЁ][а-яё]*$"
+              autocomplete="off"
+            />
+            <label class="input-name" for="name"></label>
+          </div>
+
+          <div class="contacts__wrapper_contacts_form_wrap-email">
+            <input
+              class="_req _email"
+              tabindex="44"
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Ваша почта*"
+              data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+              autocomplete="off"
+            />
+            <label class="input-email" for="email"
+              >В формате: name@mail.com</label
+            >
+          </div>
+        </div>
+        <div class="contacts__wrapper_contacts_form_wrap-message">
+          <textarea
+            tabindex="45"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <label for="message">Ваше сообщение</label>
+        </div>
+        <div class="contacts__wrapper_contacts_form_submit-wrap">
+          <button
+            tabindex="47"
+            class="submit__button btn"
+            id="button"
+            type="submit"
+            name="submit"
+            value="submit"
+          >
+            Отправить сообщение
+          </button>
+          <div class="form_police">
+            <label class="checkbox__label" for="police">
+              <input
+                class="checkbox__input _req"
+                type="checkbox"
+                id="police"
+                name="police"
+                data-reg="true"
+              />
+              <span
+                tabindex="46"
+                class="checkmark _req"
+                id="customCheckbox"
+                type="checkbox"
+              ></span>
+
+              <span class="link_police">
+                Я согласен(а) с<a href="./pages/policy.html" target="_blank"
+                  >политикой конфиденциальности*</a
+                >
+              </span>
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

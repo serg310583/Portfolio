@@ -1,0 +1,103 @@
+.experience {
+  padding-top: 120px;
+  .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      top: -5px;
+    }
+  }
+  .subtitle {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+  .divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 0 auto;
+  }
+  .resume__wrapper {
+    padding: 60px 65px 0 65px;
+    margin-left: 45px;
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    column-gap: 135px;
+    .resume__column {
+      &-title {
+        position: relative;
+        padding-left: 35px;
+        padding-bottom: 45px;
+        @include before_circle;
+        &:before {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          left: -50px;
+          top: 10px;
+          background-color: $main-color;
+        }
+      }
+    }
+    ul {
+      list-style-type: none;
+      li {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background-color: #000;
+          top: -50px;
+          left: -42px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          width: 42px;
+          height: 1px;
+          background-color: #000;
+          top: 18px;
+          left: -42px;
+        }
+      }
+    }
+    .resume__item {
+      display: flex;
+      flex-direction: column;
+      &-header {
+        display: flex;
+      }
+      &-icon {
+        position: relative;
+        padding: 14px 18px 0 18px;
+        @include before_circle;
+        &:before {
+          top: 0px;
+          left: 0px;
+        }
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      &-body {
+        width: 375px;
+        padding: 12px 0 45px 0;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        span {
+          color: blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

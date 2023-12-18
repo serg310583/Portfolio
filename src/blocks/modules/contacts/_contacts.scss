@@ -1,0 +1,195 @@
+.contacts {
+  .wrapper {
+    padding: 120px 35px 90px 50px;
+    padding-bottom: 90px;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    column-gap: 68px;
+    .contacts__photo_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .contacts__wrapper {
+    &_contacts_title {
+      position: relative;
+      padding-top: 5px;
+      padding-left: 12px;
+      padding-bottom: 6px;
+      @include before_circle;
+      &:before {
+        top: 0px;
+        left: 0px;
+      }
+    }
+    &_menu-socials {
+      padding: 20px 0;
+      width: 135px;
+      display: flex;
+      justify-content: space-between;
+      .promo__socials_link {
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    &_contacts_form * {
+      outline: none;
+    }
+    form {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../../../img//img/loading.gif) center / 50px no-repeat;
+        opacity: 0;
+        visibility: hidden;
+      }
+      &._sending::after {
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.5s ease 0s;
+      }
+    }
+    &_contacts_form {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      &_wrap-name,
+      &_wrap-email,
+      &_wrap-message {
+        display: flex;
+        margin-right: 15px;
+        flex-direction: column;
+      }
+      label {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 21px;
+      }
+      &_wrap {
+        display: flex;
+        padding-bottom: 30px;
+
+        &-name,
+        &-email,
+        &-message {
+          position: relative;
+
+          label {
+            padding: 0 8px;
+            bottom: -21px;
+            left: 0px;
+            color: rgb(155, 155, 155);
+            background-color: #fff;
+            z-index: -1;
+          }
+          input {
+            width: 260px;
+            height: 45px;
+            padding-left: 10px;
+            padding-right: 10px;
+            transition: all 0.5s ease 0s;
+          }
+          textarea {
+            width: 565px;
+            height: 190px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 2.15;
+            transition: all 0.5s ease 0s;
+          }
+          input:focus,
+          textarea:focus {
+            box-shadow: 0 0 15px $main-color;
+          }
+          ._error {
+            box-shadow: 0 0 15px red;
+          }
+        }
+      }
+
+      &_submit-wrap {
+        display: flex;
+        align-items: center;
+        padding-top: 38px;
+
+        .submit__button {
+          padding: 12px 26px;
+          width: 219px;
+          height: 45px;
+          line-height: 21px;
+          margin-right: 40px;
+          cursor: pointer;
+        }
+        .submit__button:focus {
+          box-shadow: 0 0 15px $main-color;
+          transition: all 0.5s ease 0s;
+        }
+        .form_police {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .checkbox__label {
+            position: relative;
+            display: flex;
+            cursor: pointer;
+            .checkbox__input {
+              position: absolute;
+              opacity: 1;
+              width: 16px;
+              height: 16px;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+            ._error {
+              box-shadow: 0 0 15px red;
+            }
+
+            .checkmark {
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              height: 16px;
+              width: 16px;
+              background-color: #fff;
+              border: 1px solid #000;
+
+              &::before {
+                content: '\2713';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                color: #000;
+                font-weight: 700;
+                display: none;
+              }
+              &:focus {
+                box-shadow: 0 0 15px $main-color;
+                transition: all 0.5s ease 0s;
+              }
+              &.checked::before {
+                display: block;
+              }
+            }
+
+            .link_police {
+              margin-left: 25px;
+              a {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

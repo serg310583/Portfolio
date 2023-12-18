@@ -1,0 +1,252 @@
+@media (max-width: 1200px) {
+  .contacts {
+    .wrapper {
+      padding-top: 55px;
+      grid-template-columns: 300px 488px;
+      column-gap: 68px;
+      .contacts__wrapper {
+        &_contacts_form {
+          &_wrap {
+            &-name,
+            &-email,
+            &-message {
+              input {
+                width: 205px;
+              }
+              textarea {
+                width: 455px;
+                height: 170px;
+              }
+            }
+          }
+          &_submit-wrap {
+            .submit__button {
+              width: 270px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .contacts {
+    .wrapper {
+      padding-top: 45px;
+      grid-template-columns: 250px 438px;
+      column-gap: 48px;
+      .contacts__wrapper {
+        .title_fz36 {
+          font-size: 36px;
+        }
+        &_contacts_form {
+          &_wrap {
+            flex-direction: column;
+            &-name,
+            &-email,
+            &-message {
+              input {
+                padding: 0 10px 0 10px;
+                width: 360px;
+              }
+              textarea {
+                width: 360px;
+                height: 150px;
+              }
+            }
+            &-name {
+              padding-bottom: 30px;
+            }
+          }
+          &_submit-wrap {
+            .submit__button {
+              width: 270px;
+              padding: 2px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    .wrapper {
+      padding-top: 45px;
+      grid-template-columns: 450px;
+
+      .contacts__photo {
+        display: none;
+      }
+      .contacts__wrapper {
+        .title_fz36 {
+          font-size: 30px;
+        }
+        &_contacts_form {
+          &_wrap {
+            padding-bottom: 20px;
+            flex-direction: column;
+            &-name,
+            &-email,
+            &-message {
+              input {
+                padding: 0 10px 0 10px;
+
+                width: 430px;
+              }
+              textarea {
+                width: 430px;
+                height: 130px;
+              }
+            }
+            &-name {
+              padding-bottom: 30px;
+            }
+          }
+          &_submit-wrap {
+            .submit__button {
+              width: 270px;
+              padding: 2px 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .contacts {
+    .wrapper {
+      padding-top: 45px;
+      grid-template-columns: 430px;
+
+      .contacts__photo {
+        display: none;
+      }
+      .contacts__wrapper {
+        .title_fz36 {
+          font-size: 30px;
+        }
+        &_contacts_form {
+          &_wrap {
+            flex-direction: column;
+            padding-bottom: 20px;
+            &-name,
+            &-email,
+            &-message {
+              input {
+                padding: 0 10px;
+                width: 80vw;
+              }
+              textarea {
+                width: 80vw;
+                height: 130px;
+              }
+            }
+            &-name {
+              padding-bottom: 20px;
+            }
+          }
+          &_submit-wrap {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            align-items: start;
+            .submit__button {
+              margin: 0;
+              margin-top: 15px;
+              justify-content: center;
+              width: 250px;
+              padding-top: 10px;
+              order: 2;
+            }
+            .form_police {
+              .checkbox__label {
+                input {
+                  margin-right: 10px;
+                }
+              }
+              display: flex;
+              flex-direction: column;
+              order: 1;
+              margin-bottom: 10px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .contacts {
+    .wrapper {
+      padding: 45px 10px 20px 10px;
+      grid-template-columns: 1fr;
+
+      .contacts__photo {
+        display: none;
+      }
+      .contacts__wrapper {
+        .title_fz16 {
+          margin-bottom: 15px;
+        }
+        .title_fz36 {
+          font-size: 30px;
+          line-height: 30px;
+          padding-bottom: 20px;
+        }
+        &_contacts_form {
+          &_wrap {
+            flex-direction: column;
+            padding-bottom: 20px;
+            &-name,
+            &-email,
+            &-message {
+              input {
+                padding: 0 10px;
+
+                width: 80vw;
+              }
+              textarea {
+                width: 80vw;
+                height: 130px;
+                margin-bottom: 15px;
+              }
+            }
+            &-name {
+              padding-bottom: 20px;
+            }
+          }
+          &_submit-wrap {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            align-items: center;
+            .submit__button {
+              margin: 0;
+              margin-top: 15px;
+              justify-content: center;
+              width: 250px;
+              padding-top: 10px;
+              order: 2;
+            }
+            .form_police {
+              .checkbox__label {
+                margin-left: 40px;
+                input {
+                  margin-right: 10px;
+                }
+              }
+              display: flex;
+              flex-direction: column;
+              order: 1;
+              margin-bottom: 10px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

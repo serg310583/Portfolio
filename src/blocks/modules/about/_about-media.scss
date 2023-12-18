@@ -1,0 +1,95 @@
+@media (max-width: 1200px) {
+    .about {
+        padding-top: 100px;
+        &__wrapper {            
+            grid-template-columns: 369px 540px;            
+            column-gap: 50px;
+        }
+        .about__skills {
+            grid-template-columns: 2fr 255px;
+            column-gap: 30px; 
+        }
+    }
+}
+    
+    
+
+@media (max-width: 992px) {
+    .about {
+        padding-top: 80px;
+        &__wrapper {            
+            grid-template-columns: 300px 390px;            
+            column-gap: 50px;
+            row-gap: 15px;
+        }
+        .about__skills {
+            grid-template-columns: 370px;
+            grid-template-rows: repeat(3, minmax(85px, auto));
+            column-gap: 30px;
+            grid-auto-rows: minmax(105px, auto);            
+            &-item {
+                grid-template-columns: 40px 330px;
+                column-gap: 20px;
+            } 
+        }
+        &__text {
+            .title_fz36 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .about {
+        padding-top: 40px;
+        &__wrapper {            
+            grid-template-columns: 1fr;            
+            column-gap: 50px;
+            row-gap: 15px;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        .about__skills {
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(2, minmax(90px, auto));
+            grid-auto-rows: minmax(90px, auto);
+            &-item {
+                grid-template-columns: 40px 205px;
+                column-gap: 20px;
+            } 
+        }
+        &__text {
+            .title_fz36 {
+                font-size: 24px;
+            }
+        }
+    } 
+}
+@media (max-width: 576px) {
+    .about {
+        padding-top: 40px;
+        &__wrapper {            
+            grid-template-columns: 1fr; 
+            grid-template-rows: 340px auto auto;
+            column-gap: 0px;
+            row-gap: 15px;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        .about__skills {
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(3, minmax(90px, auto));
+            grid-auto-rows: minmax(90px, auto);
+            justify-content: center;
+            padding-left: 10px;            
+        }
+        &__text {
+            padding: 0 10px;
+            .title_fz36 {
+                font-size: 24px;
+            }
+        }
+    } 
+}

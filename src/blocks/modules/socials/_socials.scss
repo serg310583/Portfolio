@@ -1,0 +1,30 @@
+.promo__socials {
+  position: fixed;
+  top: 367px;
+  left: -140px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: rotate(-90deg);
+  width: 338px;
+  height: 24px;
+
+  &_links {
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+  }
+  &_link {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &_divider {
+    height: 2px;
+    width: 70px;
+    background-color: #000;
+  }
+}
