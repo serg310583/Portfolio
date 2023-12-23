@@ -5,3 +5,4 @@ import '%modules%/skills/skills';
 import '%modules%/modalHackaton/modalHackaton';
 import '%modules%/modalDiplom/modalDiplom';
 import '%modules%/contacts/contacts';
+import '%modules%/up/up';

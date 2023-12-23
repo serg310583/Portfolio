@@ -1,7 +1,9 @@
 .promo {
   min-height: 100vh;
   position: relative;
+  background-color: $second-color;
   background: url('../img/img/main_bg.jpg') no-repeat 50% / cover;
+
   .container {
     padding-top: 205px;
   }
