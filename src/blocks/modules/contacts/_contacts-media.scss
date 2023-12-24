@@ -124,11 +124,17 @@
         display: none;
       }
       .contacts__wrapper {
+        width: 80vw;
+        &_contacts_subtitle-sub {
+          width: 80vw;
+        }
         .title_fz36 {
           font-size: 30px;
         }
         &_contacts_form {
+          width: 80%;
           &_wrap {
+            width: 80vw;
             flex-direction: column;
             padding-bottom: 20px;
             &-name,
@@ -136,16 +142,19 @@
             &-message {
               input {
                 padding: 0 10px;
-                width: 80vw;
+                width: 80%;
               }
               textarea {
-                width: 80vw;
+                width: 80%;
                 height: 130px;
               }
             }
             &-name {
               padding-bottom: 20px;
             }
+          }
+          &_wrap-message {
+            width: 78vw;
           }
           &_submit-wrap {
             display: flex;
@@ -182,12 +191,14 @@
   .contacts {
     .wrapper {
       padding: 45px 10px 20px 10px;
-      grid-template-columns: 1fr;
+      grid-template-columns: 370px;
 
       .contacts__photo {
         display: none;
       }
       .contacts__wrapper {
+        width: 90vw;
+
         .title_fz16 {
           margin-bottom: 15px;
         }
@@ -197,6 +208,7 @@
           padding-bottom: 20px;
         }
         &_contacts_form {
+          width: 80%;
           &_wrap {
             flex-direction: column;
             padding-bottom: 20px;
@@ -206,10 +218,10 @@
               input {
                 padding: 0 10px;
 
-                width: 80vw;
+                width: 80%;
               }
               textarea {
-                width: 80vw;
+                width: 80%;
                 height: 130px;
                 margin-bottom: 15px;
               }

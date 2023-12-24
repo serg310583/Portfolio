@@ -30,9 +30,10 @@
   .item {
     padding-left: 25px;
     display: grid;
-    grid-template: 21px 18px / repeat(2, auto);
+    grid-template: 40px 18px / repeat(2, auto);
     &__header-services {
       position: relative;
+      line-height: 15px;
       @include before_circle;
       &:before {
         top: 2px;
